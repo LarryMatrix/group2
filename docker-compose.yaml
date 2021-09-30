@@ -1,20 +1,12 @@
 version: '3.7'
 
 services:
-  group1:
-    container_name: group1
+  group_app:
+    container_name: group_app
     restart: always
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
     - "1010:80"
-  massanja:
-    container_name: massanja
-    restart: always
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    ports:
-    - "2020:80"
 
